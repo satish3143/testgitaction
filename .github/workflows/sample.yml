@@ -20,16 +20,7 @@ jobs:
 
     - name: Install dependencies
       run: npm install
-    - name: Read package.json
-  # You may pin to the exact commit or the version.
-  # uses: rexdefuror/read-package-json@fe1c0720ff5f7af4a6b871ef986b93041bd02de3
-  uses: rexdefuror/read-package-json@v1.0.5
-  with:
-    # The file to read
-    file: # optional, default is package.json
-    # Path to file
-    path: # optional, default is ./
-          
+    
     - name: Run build
       run: npm run build
 
